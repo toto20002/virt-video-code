@@ -10,7 +10,7 @@
 ### 2. Применение принципов IaaC в работе с виртуальными машинами
 * Понятие IaaC
 * Паттерны IaaC
-* [Инструменты IaaC. Vagrant](https://github.com/netology-code/virt-video-code/blob/main/Vagrantfile)
+* [Инструменты IaaC. Vagrant]()
 * Инструменты IaaC. Ansible
 
 ### 3. Введение в Docker
