@@ -8,7 +8,7 @@ sudo python3 py3-pip openssl ca-certificates sshpass openssh-client rsync git &&
         build-base && \
      pip install --upgrade pip wheel && \
      pip install --upgrade cryptography cffi && \
-     pip install ansible==2.9.24 && \
+     pip install ansible==2.9.24 --ignore-installed && \
      pip install mitogen ansible-lint jmespath && \
      pip install --upgrade pywinrm && \
      apk del build-dependencies && \
