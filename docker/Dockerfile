@@ -1,4 +1,5 @@
-FROM alpine:3.14
+# FROM alpine:3.14
+FROM ubuntu
 RUN  CARGO_NET_GIT_FETCH_WITH_CLI=1 && \
      apk --no-cache add \
 sudo python3 py3-pip openssl ca-certificates sshpass openssh-client rsync git && \
