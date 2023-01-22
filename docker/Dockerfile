@@ -11,4 +11,5 @@ RUN  mkdir /ansible && \
 WORKDIR /ansible
 COPY ansbile.cfg /ansible/
 
+
 CMD  [ "ansible-playbook", "--version" ]
