@@ -10,7 +10,7 @@ sudo python3 py3-pip openssl ca-certificates sshpass openssh-client rsync git &&
      pip install --upgrade pip wheel && \
      pip install --upgrade cryptography cffi --ignore-installed && \
      pip install ansible==2.9.24 && \
-     pip install mitogen ansible-lint jmespath --ignore-installed && \
+     pip install mitogen ansible-lint jmespath && \
      pip install --upgrade pywinrm --ignore-installed && \
      apk del build-dependencies && \
      rm -rf /var/cache/apk/* && \
