@@ -1,14 +1,13 @@
-# FROM alpine:3.14
-FROM ubuntu
-RUN  apt update && \
-     apt install ansible
+FROM ubuntu:18.04
 
-RUN  mkdir /ansible && \
-     mkdir -p /etc/ansible && \
-     echo 'localhost' > /etc/ansible/hosts
+ENV DEBIAN_FRONTEND=noninteractive
 
-WORKDIR /ansible
-COPY ansbile.cfg /ansible/
-
-
-CMD  [ "ansible-playbook", "--version" ]
+RUN apt-get update && \
+  apt-get install -y gcc python-dev libkrb5-dev && \
+  apt-get install python3-pip -y && \
+  pip3 install --upgrade pip && \
+  pip3 install --upgrade virtualenv && \
+  pip3 install pywinrm[kerberos] && \
+  apt install krb5-user -y && \ 
+  pip3 install pywinrm && \
+  pip3 install ansible
