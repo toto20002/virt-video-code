@@ -2,9 +2,9 @@
 FROM ubuntu
 RUN  
 
-     sudo apt-add-repository ppa:ansible/ansible  && \
-     sudo apt update && \
-     sudo apt install ansible 
+     apt-add-repository ppa:ansible/ansible  && \
+     apt update && \
+     apt install ansible 
 
 RUN  mkdir /ansible && \
      mkdir -p /etc/ansible && \
