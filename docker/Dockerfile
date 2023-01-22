@@ -1,10 +1,8 @@
 # FROM alpine:3.14
 FROM ubuntu
-RUN  
-
-     apt-add-repository ppa:ansible/ansible  && \
+RUN  apt-add-repository ppa:ansible/ansible  && \
      apt update && \
-     apt install ansible 
+     apt install ansible
 
 RUN  mkdir /ansible && \
      mkdir -p /etc/ansible && \
